@@ -1,18 +1,15 @@
 # Automation Exercise Tests
 
-Playwright and TypeScript tests for [Automation Exercise](https://www.automationexercise.com/), using page objects, fixtures, generated test data, and Allure reports.
+This project [Automation Exercise](https://www.automationexercise.com/) tests signup and login using Playwright and TypeScript . It uses page objects to keep page interactions in one place, fixtures to set up test accounts, and Allure for reports.
 
 ## Setup
 
 Requires Node.js 22.13+ and Java 17+ for Allure.
 
 ```bash
-npm ci
+npm install
 npx playwright install
-cp .env.example .env
 ```
-
-On Linux or CI, use `npx playwright install --with-deps` to include browser system dependencies.
 
 Configure `BASE_URL`, `WORKERS`, `RETRIES`, and `HEADLESS` in `.env` as needed.
 
